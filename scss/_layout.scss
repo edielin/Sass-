@@ -3,6 +3,21 @@
 // 1. Base: 全站設定(打好地基)
 // 2. Layout: 佈局管理
 // 3. 模組化： 增加子模組做擴充行為
+// 4. HTML標籤優化
+
+// 方便 HTML 語易化調整，CSS 盡量不指定 HTML tag
+
+.layout-section {
+    padding: 24px;
+}
+.layout-title {
+    font-size: $font-m * 2;
+    font-weight: 600;
+}
+.layout-list {
+    list-style: circle;
+}
+
 
 header {
     position: fixed;
@@ -21,17 +36,6 @@ footer {
     background: grey;
     @include mobile {
         height: 70px;
-    }
-}
-
-// 若同個樣式會出現在許多頁面的話，避免以語意命名 (ex. dvd-list, book-list) 
-// 改成統一共用樣式名稱
-.layout-list {
-    padding: 24px;
-    .box {
-        display: inline-block;
-        height: 20px;
-        width: 20px;
     }
 }
 
