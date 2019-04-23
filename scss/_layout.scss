@@ -1,22 +1,22 @@
-// Sass/CSS 設計模式： 收納術
-// Smacss
-// 1. Base: 全站設定(打好地基)
-// 2. Layout: 佈局管理
-// 3. 模組化： 增加子模組做擴充行為
-// 4. HTML標籤優化
+// BEM 命名
+// Block(區塊), Element(元素), Modifier(修飾符)
 
-// 方便 HTML 語易化調整，CSS 盡量不指定 HTML tag
-
-.layout-section {
+.list {
     padding: 24px;
 }
-.layout-title {
-    font-size: $font-m * 2;
-    font-weight: 600;
+.list__title {
+    font-weight: 500;
+    font-size: $font-m * 1.15;
 }
-.layout-list {
-    list-style: circle;
+.list__img {
+    border: 1px solid black;
+    padding: 8px;
+    background: pink;
 }
+.list__img--changeBg {
+    background: black;
+}
+
 
 
 header {
@@ -45,4 +45,9 @@ footer {
     @include mobile {
         padding: 50px;
     } 
+}
+
+.layout-title {
+    font-size: $font-m * 2;
+    font-weight: 600;
 }

@@ -128,17 +128,23 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   border-right: none;
 }
 
-.layout-section {
+.list {
   padding: 24px;
 }
 
-.layout-title {
-  font-size: 32px;
-  font-weight: 600;
+.list__title {
+  font-weight: 500;
+  font-size: 18.4px;
 }
 
-.layout-list {
-  list-style: circle;
+.list__img {
+  border: 1px solid black;
+  padding: 8px;
+  background: pink;
+}
+
+.list__img--changeBg {
+  background: black;
 }
 
 header {
@@ -176,5 +182,10 @@ footer {
   .wrapper {
     padding: 50px;
   }
+}
+
+.layout-title {
+  font-size: 32px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=all.css.map */
