@@ -1,0 +1,24 @@
+// Sass/CSS 設計模式： 收納術
+// Smacss
+// 1. Base: 全站設定(打好地基)
+// 2. Layout: 佈局管理
+// 3. 模組化： 增加子模組做擴充行為
+
+// 可滿足大部分(80%~90%)設計樣式
+body {
+    font-family: $font-family;
+    font-size: $font-m;
+}
+
+a {
+    color: $blue;
+    a:visited{
+        color: $primary-color;
+    }
+    &:hover {
+        color: $green-light;
+    }
+    &:active {
+        color: $accent-color;
+    }
+}

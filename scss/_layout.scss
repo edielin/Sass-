@@ -1,0 +1,34 @@
+// Sass/CSS 設計模式： 收納術
+// Smacss
+// 1. Base: 全站設定(打好地基)
+// 2. Layout: 佈局管理
+// 3. 模組化： 增加子模組做擴充行為
+
+header {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100vw;
+    @include mobile {
+        height: 50px;
+    }
+}
+
+footer {
+    height: 200px;
+    width: 100vw;
+    @include mobile {
+        height: 100px;
+    }
+}
+
+// 若同個樣式會出現在許多頁面的話，避免以語意命名 (ex. dvd-list, book-list) 
+// 改成統一共用樣式名稱
+.layout-list {
+    padding: 24px;
+    .box {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+    }
+}
