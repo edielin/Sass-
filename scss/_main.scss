@@ -1,16 +1,16 @@
-body {
-    font-family: $font-family;
-    font-size: $font-m;
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    background: $primary-color;
-}
-
 .title {
-    font-family: $font-family-title;
-    font-size: $font-m * 1.5;
-    color: $accent-color;
+    @include primarySize;
+}
+
+.header h1 {
+    background: $accent-color;
+    @include hide-text;
+}
+
+.box1 {
+    @include color-color($primary-color);
+}
+
+.box2 {
+    @include color-color(#ED9898);
 }
