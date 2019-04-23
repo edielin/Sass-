@@ -1,18 +1,17 @@
-// Mixin
-// 能幫你記住 CSS 技巧，讓你不用再因回想原理而中斷思緒
-@mixin primarySize {
-    color: $primary-color;
-    font-size: $font-m; 
-}
-@mixin hide-text {
-    text-indent: 110%;
-    white-space: nowrap;
-    overflow: hidden;
+@mixin desktop-below {
+    @media (max-width: 1023px) {
+        @content
+    }
 }
 
-// 搭配參數，讓 Mixin 更靈活
-@mixin color-color($color) {
-    color: $color;
-    border: 5px solid $color;
-    text-decoration: $color;
+@mixin pad {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 568px) {
+        @content
+    }
 }

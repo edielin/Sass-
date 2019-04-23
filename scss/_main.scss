@@ -1,16 +1,20 @@
-.title {
-    @include primarySize;
+.header {
+    height: 60px;
+    font-size: $font-m * 1.35;
+    @include pad {
+        font-size: $font-m;
+    }
+    @include mobile {
+        height: 50px;
+        font-size: $font-m * 0.65;
+    }
 }
-
-.header h1 {
-    background: $accent-color;
-    @include hide-text;
-}
-
-.box1 {
-    @include color-color($primary-color);
-}
-
-.box2 {
-    @include color-color(#ED9898);
+.footer {
+    font-size: $font-m * 1.35;
+    @include pad {
+        font-size: $font-m;
+    }
+    @include mobile {
+        font-size: $font-m * 0.65;
+    }
 }
