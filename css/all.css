@@ -1,4 +1,19 @@
-p {
-  font-size: 19.2px;
+.box {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+}
+
+.box.box1 {
+  background: #008787;
+}
+
+.box.box2 {
+  background: #005454;
+}
+
+.box.box3 {
+  background: #00baba;
 }
 /*# sourceMappingURL=all.css.map */
