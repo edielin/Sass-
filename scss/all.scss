@@ -1,16 +1,18 @@
-$base-bg-color: #008787;
+@import "variable";
+
+body {
+    font-family: $font-family;
+    font-size: $font-m;
+}
+
 .box {
-  display: inline-block;
-  width: 120px;
-  height: 120px;
-  margin: 20px;
-  &.box1 {
-    background: $base-bg-color;
-  }
-  &.box2 {
-    background: darken($base-bg-color, 10%);
-  }
-  &.box3 {
-    background: lighten($base-bg-color, 10%);
-  }
+    width: 100px;
+    height: 100px;
+    background: $primary-color;
+}
+
+.title {
+    font-family: $font-family-title;
+    font-size: $font-m * 1.5;
+    color: $accent-color;
 }

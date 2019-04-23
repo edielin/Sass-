@@ -1,19 +1,17 @@
-.box {
-  display: inline-block;
-  width: 120px;
-  height: 120px;
-  margin: 20px;
+body {
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 16px;
 }
 
-.box.box1 {
+.box {
+  width: 100px;
+  height: 100px;
   background: #008787;
 }
 
-.box.box2 {
-  background: #005454;
-}
-
-.box.box3 {
-  background: #00baba;
+.title {
+  font-family: "monospace";
+  font-size: 24px;
+  color: #FF8000;
 }
 /*# sourceMappingURL=all.css.map */
